@@ -93,8 +93,9 @@ footer small{flex-basis:100%;text-align:center}
  #menu{position:fixed;inset:62px 0 auto;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 20px;display:none}
  #menu.open{display:flex}
  #menu a{padding:12px 0}
- .hero-in{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(24px,5vw,64px)}
-.hero-in>div{min-width:0}
+ .hero{background-position:70% center;padding-top:100px}
+ .hero-in{grid-template-columns:minmax(0,1fr);text-align:center;gap:28px}
+ .photo{order:-1;width:clamp(200px,60vw,320px)}
  .btns,.social{justify-content:center}
  .lead,.role{margin-inline:auto}
  .about,.contact,.proj{grid-template-columns:1fr}
