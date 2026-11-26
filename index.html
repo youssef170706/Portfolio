@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youssef Mohamed Portfolio</title>
+<meta name="description" content="Portfolio of Youssef Mohamed, Computer Science & AI student at Fayoum University interested in Machine Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="logo">Youssef Mohamed</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#home" data-i18n="n_home">Home</a>
+    <a href="#about" data-i18n="n_about">About</a>
+    <a href="#skills" data-i18n="n_skills">Skills</a>
+    <a href="#education" data-i18n="n_edu">Education & Training</a>
+    <a href="#projects" data-i18n="n_proj">Projects</a>
+    <a href="#certifications" data-i18n="n_cert">Certifications</a>
+    <a href="#contact" data-i18n="n_contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <button id="lang" class="ib" aria-label="Switch language">عربي</button>
+    <button id="theme" class="ib" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <button id="burger" class="ib" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="hi" data-i18n="hi">Hello, I'm</p>
+      <h1>Youssef Mohamed</h1>
+      <p class="role" data-i18n="role">Computer Science & AI Student | Aspiring Machine Learning Engineer</p>
+      <p class="lead" data-i18n="intro">Third-year student at Fayoum University, building a foundation in Python, data science and machine learning.</p>
+      <div class="btns">
+        <a class="btn" href="#projects" data-i18n="b_proj">View my Projects</a>
+        <a class="btn ghost" href="files/Youssef_Mohamed_CV.pdf" download="Youssef_Mohamed_CV.pdf"><i class="fa-solid fa-download"></i> <span data-i18n="b_cv">Download CV</span></a>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/youssef-mohamed-71ab08356/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/youssef170706" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/201022025857" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:youssef.2006.net@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <img class="photo" src="images/profile.jpeg" alt="Portrait of Youssef Mohamed" width="450" height="450">
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2 data-i18n="n_about">About</h2>
+  <div class="about">
+    <div class="txt">
+      <p data-i18n="a1"></p><p data-i18n="a2"></p><p data-i18n="a3"></p>
+    </div>
+    <div class="facts">
+      <div class="card"><i class="fa-solid fa-building-columns"></i><h3>Fayoum University</h3><p data-i18n="f_uni">Faculty of Computers & Artificial Intelligence</p></div>
+      <div class="card"><i class="fa-solid fa-location-dot"></i><h3 data-i18n="f_locT">Location</h3><p data-i18n="f_loc">Fayoum, Egypt</p></div>
+      <div class="card"><i class="fa-solid fa-language"></i><h3 data-i18n="f_langT">Languages</h3><p data-i18n="f_lang">Arabic (Native), English (B1)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt">
+  <h2 data-i18n="n_skills">Skills</h2>
+  <div id="skillGrid" class="skills"></div>
+</section>
+
+<section id="education" class="sec">
+  <h2 data-i18n="n_edu">Education & Training</h2>
+  <ol class="tl">
+    <li>
+      <span class="when">2024 – 2028</span>
+      <h3 data-i18n="e1t">Faculty of Computers & Artificial Intelligence</h3>
+      <p class="org">Fayoum University</p>
+      <p data-i18n="e1d">Bachelor's degree (in progress), 4-year program. Expected graduation: 2028.</p>
+    </li>
+    <li>
+      <span class="when" data-i18n="e2w">Sep 21 – Oct 29, 2026</span>
+      <h3 data-i18n="e2t">Machine Learning Training Program</h3>
+      <p class="org" data-i18n="e2o">National Telecommunication Institute (NTI)</p>
+      <p data-i18n="e2d">Completed practical machine learning training covering Python, data science tools and machine learning concepts, including a collaborative Customer Churn Prediction project.</p>
+      <p class="pend"><i class="fa-regular fa-clock"></i> <span data-i18n="e2s">Certificate: pending issuance</span></p>
+    </li>
+  </ol>
+</section>
+
+<section id="projects" class="sec alt">
+  <h2 data-i18n="n_proj">Projects</h2>
+  <article class="proj">
+    <button class="zoom" data-zoom="images/customer-churn.jpg" aria-label="Enlarge screenshot"><img src="images/customer-churn.jpg" alt="Screenshot of the Customer Churn Prediction Streamlit app" loading="lazy" width="1600" height="900"></button>
+    <div class="pi">
+      <span class="tag" data-i18n="p_team">Team Project</span>
+      <h3>Customer Churn Prediction System</h3>
+      <p data-i18n="p_d">A machine learning system that predicts customer churn and helps businesses identify customers who are likely to leave. It uses machine learning models to analyze customer data and serves predictions through an interactive Streamlit application.</p>
+      <ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>XGBoost</li><li>Streamlit</li></ul>
+      <div class="btns">
+        <a class="btn" href="https://customer-churn---prediction.streamlit.app/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> <span data-i18n="p_live">Live Demo</span></a>
+        <a class="btn ghost" href="https://github.com/youssef170706/Customer-Churn-Prediction" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="certifications" class="sec">
+  <h2 data-i18n="n_cert">Certifications</h2>
+  <article class="proj cert">
+    <button class="zoom" data-zoom="images/certificate.png" aria-label="Enlarge certificate"><img src="images/certificate.png" alt="Data Analysis workshop certificate of completion" loading="lazy" width="1123" height="794"></button>
+    <div class="pi">
+      <h3 data-i18n="c_t">Data Analysis Workshop</h3>
+      <p class="org">Creativa Innovation Hubs</p>
+      <p><i class="fa-regular fa-calendar"></i> <span data-i18n="c_d">September 27, 2026</span></p>
+      <p class="hint" data-i18n="c_h">Click the certificate to view it larger.</p>
+    </div>
+  </article>
+</section>
+
+<section id="contact" class="sec alt">
+  <h2 data-i18n="n_contact">Contact</h2>
+  <div class="links">
+    <a href="mailto:youssef.2006.net@gmail.com"><i class="fa-solid fa-envelope"></i><span><b>Email</b><small>youssef.2006.net@gmail.com</small></span></a>
+    <a href="https://wa.me/201022025857" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span><b>WhatsApp</b><small dir="ltr">+20 102 202 5857</small></span></a>
+    <a href="https://www.linkedin.com/in/youssef-mohamed-71ab08356/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span><b>LinkedIn</b><small>youssef-mohamed</small></span></a>
+    <a href="https://github.com/youssef170706" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span><b>GitHub</b><small>youssef170706</small></span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Youssef Mohamed</p>
+  <nav aria-label="Footer">
+    <a href="#about" data-i18n="n_about">About</a><a href="#projects" data-i18n="n_proj">Projects</a><a href="#contact" data-i18n="n_contact">Contact</a>
+  </nav>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/youssef-mohamed-71ab08356/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/youssef170706" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  </div>
+  <small>© <span id="yr"></span> Youssef Mohamed. <span data-i18n="rights">All rights reserved.</span></small>
+</footer>
+
+<dialog id="lb"><button id="lbx" aria-label="Close"><i class="fa-solid fa-xmark"></i></button><img alt=""></dialog>
+<script src="script.js?v=3"></script>
+</body>
+</html>
